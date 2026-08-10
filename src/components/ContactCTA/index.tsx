@@ -12,15 +12,15 @@ export default function ContactCTA() {
         id="contact-heading"
         className="text-lg font-semibold tracking-tight text-foreground"
       >
-        Punya proyek dalam pikiran?
+        Punya proyek atau ide?
       </h2>
       <p className="mt-2 text-[15px] leading-6 text-muted">
-        Mari bangun sesuatu yang hebat bersama.
+        Mari wujudkan bersama — dari konsep, desain, hingga peluncuran.
       </p>
       <div className="mt-6 flex flex-col gap-3 text-left">
         <LinkCard
           href={`mailto:${profile.contactEmail}`}
-          label="Hubungi Saya"
+          label="Email"
           description={profile.contactEmail}
           icon={Mail}
         />

@@ -16,7 +16,7 @@ export interface Profile {
 export const profile: Profile = {
   name: 'VinnDeev',
   descriptor: 'Fullstack Web Developer',
-  bio: 'Membangun website modern, produk digital, dan eksperimen di web.',
+  bio: 'Membangun website modern, produk digital, dan eksperimen web.',
   image: {
     src: '/avatar.png',
     alt: 'Logo VinnDeev',

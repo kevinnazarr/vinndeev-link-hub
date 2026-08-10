@@ -11,13 +11,13 @@ export interface FeaturedLink {
 export const featuredLinks: FeaturedLink[] = [
   {
     title: 'Portfolio',
-    description: 'Selected projects & case studies',
+    description: 'Proyek pilihan & studi kasus',
     url: 'https://kevinnazar.my.id',
     icon: FolderGit2,
   },
   {
     title: 'VinnDeev Website',
-    description: 'Official website & services',
+    description: 'Website resmi & layanan',
     url: 'https://vinndeev.site',
     icon: Globe,
   },
