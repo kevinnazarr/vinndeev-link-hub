@@ -31,9 +31,113 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      /* Skeleton shown until React mounts; replaced by app content. */
+      #root .vd-skeleton-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 64px 20px 0;
+      }
+      @media (min-width: 640px) {
+        #root .vd-skeleton-page {
+          padding-top: 96px;
+        }
+      }
+      #root .vd-skeleton {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        background-color: #e7e7ea;
+      }
+      #root .vd-skeleton::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        transform: translateX(-100%);
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+        animation: vd-shimmer 1.5s infinite;
+      }
+      @keyframes vd-shimmer {
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      #root .vd-skeleton-avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 9999px;
+      }
+      #root .vd-skeleton-title {
+        width: 180px;
+        height: 32px;
+        margin-top: 20px;
+        border-radius: 8px;
+      }
+      #root .vd-skeleton-subtitle {
+        width: 220px;
+        height: 16px;
+        margin-top: 12px;
+      }
+      #root .vd-skeleton-line {
+        width: 100%;
+        max-width: 448px;
+        height: 14px;
+        margin-top: 12px;
+      }
+      #root .vd-skeleton-row {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 48px;
+      }
+      #root .vd-skeleton-circle {
+        width: 56px;
+        height: 56px;
+        border-radius: 9999px;
+      }
+      #root .vd-skeleton-card {
+        width: 100%;
+        height: 76px;
+        margin-top: 12px;
+      }
+      #root .vd-skeleton-cta {
+        width: 220px;
+        height: 24px;
+        margin-top: 56px;
+        border-radius: 8px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #root .vd-skeleton::after {
+          animation: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div class="vd-skeleton-page" aria-hidden="true">
+        <div class="vd-skeleton vd-skeleton-avatar"></div>
+        <div class="vd-skeleton vd-skeleton-title"></div>
+        <div class="vd-skeleton vd-skeleton-subtitle"></div>
+        <div class="vd-skeleton vd-skeleton-line"></div>
+        <div class="vd-skeleton vd-skeleton-line"></div>
+        <div class="vd-skeleton-row">
+          <div class="vd-skeleton vd-skeleton-circle"></div>
+          <div class="vd-skeleton vd-skeleton-circle"></div>
+          <div class="vd-skeleton vd-skeleton-circle"></div>
+          <div class="vd-skeleton vd-skeleton-circle"></div>
+        </div>
+        <div class="vd-skeleton vd-skeleton-card"></div>
+        <div class="vd-skeleton vd-skeleton-card"></div>
+        <div class="vd-skeleton vd-skeleton-cta"></div>
+        <div class="vd-skeleton vd-skeleton-card"></div>
+        <div class="vd-skeleton vd-skeleton-card"></div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
