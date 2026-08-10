@@ -10,12 +10,6 @@ interface LinkCardProps {
   className?: string
 }
 
-/**
- * Full-width clickable card used for social and featured links.
- * - Icon on the left
- * - Label (and optional description) in the middle
- * - External-link indicator on the right
- */
 export default function LinkCard({
   href,
   label,

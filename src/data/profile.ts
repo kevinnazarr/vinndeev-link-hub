@@ -9,7 +9,6 @@ export interface Profile {
   bio: string
   image: ProfileImage
   contactEmail: string
-  /** WhatsApp number as the user writes it (0-prefixed); the wa.me URL is derived from it. */
   whatsappNumber: string
 }
 

@@ -3,7 +3,6 @@ import { cn } from '../../lib/utils'
 
 interface SectionProps {
   id?: string
-  /** Optional section heading. Omit to render a title-less section. */
   title?: string
   children: ReactNode
   className?: string

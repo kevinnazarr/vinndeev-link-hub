@@ -1,13 +1,6 @@
 import { forwardRef } from 'react'
 import type { LucideProps } from 'lucide-react'
 
-/**
- * Instagram brand mark as a custom icon component.
- *
- * Mirrors the lucide icon API so it can be used anywhere a LucideIcon is
- * expected. Uses `currentColor` (like GithubIcon) so it follows the same
- * color/hover treatment as the other icons in the app.
- */
 const InstagramIcon = forwardRef<SVGSVGElement, LucideProps>(
   ({ size = 24, ...props }, ref) => (
     <svg
