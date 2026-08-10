@@ -4,7 +4,7 @@ import Section from '../Section'
 
 export default function SocialLinks() {
   return (
-    <Section id="social" title="Social" className="mt-8">
+    <Section id="social" title="Sosial" className="mt-8">
       <ul className="flex flex-col gap-3">
         {socialLinks.map((link) => (
           <li key={link.name}>

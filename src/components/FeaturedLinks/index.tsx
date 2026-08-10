@@ -4,7 +4,7 @@ import Section from '../Section'
 
 export default function FeaturedLinks() {
   return (
-    <Section id="featured" title="Featured" className="mt-10">
+    <Section id="featured" title="Unggulan" className="mt-10">
       <ul className="flex flex-col gap-3">
         {featuredLinks.map((link) => (
           <li key={link.title}>

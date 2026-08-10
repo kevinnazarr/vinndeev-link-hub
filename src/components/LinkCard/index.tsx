@@ -33,9 +33,9 @@ export default function LinkCard({
       className={cn(
         'group flex w-full items-center gap-4 rounded-xl border border-border bg-surface px-4 py-4 sm:px-5',
         'transition duration-200',
-        'hover:-translate-y-px hover:border-zinc-700 hover:bg-surface-hover',
+        'hover:-translate-y-px hover:border-zinc-300 hover:bg-surface-hover',
         'active:translate-y-0 active:scale-[0.995]',
-        'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white',
+        'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground',
         className,
       )}
     >

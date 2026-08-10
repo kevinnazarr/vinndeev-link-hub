@@ -9,15 +9,18 @@ export interface Profile {
   bio: string
   image: ProfileImage
   contactEmail: string
+  /** WhatsApp number as the user writes it (0-prefixed); the wa.me URL is derived from it. */
+  whatsappNumber: string
 }
 
 export const profile: Profile = {
   name: 'VinnDeev',
   descriptor: 'Fullstack Web Developer',
-  bio: 'Building modern websites, digital products, and experiments on the web.',
+  bio: 'Membangun website modern, produk digital, dan eksperimen di web.',
   image: {
     src: '/avatar.svg',
-    alt: 'VinnDeev profile picture',
+    alt: 'Foto profil VinnDeev',
   },
   contactEmail: 'vinndeev@gmail.com',
+  whatsappNumber: '0895351125725',
 }
