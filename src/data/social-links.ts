@@ -17,16 +17,16 @@ export const socialLinks: SocialLink[] = [
     description: 'Kode, project & open source',
   },
   {
-    name: 'Instagram',
-    url: 'https://www.instagram.com/vinndeev',
-    icon: Camera,
-    description: 'Foto & konten di balik layar',
-  },
-  {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/kevinnazar',
     icon: Briefcase,
     description: 'Profil profesional & pengalaman',
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/vinndeev',
+    icon: Camera,
+    description: 'Foto & konten di balik layar',
   },
   {
     name: 'TikTok',

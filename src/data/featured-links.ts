@@ -10,15 +10,15 @@ export interface FeaturedLink {
 
 export const featuredLinks: FeaturedLink[] = [
   {
-    title: 'VinnDeev Website',
-    description: 'Official website & services',
-    url: 'https://vinndeev.site',
-    icon: Globe,
-  },
-  {
     title: 'Portfolio',
     description: 'Selected projects & case studies',
     url: 'https://kevinnazar.my.id',
     icon: FolderGit2,
+  },
+  {
+    title: 'VinnDeev Website',
+    description: 'Official website & services',
+    url: 'https://vinndeev.site',
+    icon: Globe,
   },
 ]
