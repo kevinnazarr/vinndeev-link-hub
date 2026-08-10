@@ -8,6 +8,12 @@ Didesain mobile-first dengan fokus pada kecepatan, kesederhanaan, dan personal b
 
 ---
 
+## 📸 Preview
+
+![Preview VinnDeev Link Hub](public/privew.png)
+
+---
+
 ## ✨ Fitur
 
 - **Semua data via `.env`** — profil, kontak, tautan sosial, dan tautan unggulan dikelola dari satu file, tanpa perlu menyentuh kode.
