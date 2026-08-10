@@ -18,8 +18,8 @@ export const profile: Profile = {
   descriptor: 'Fullstack Web Developer',
   bio: 'Membangun website modern, produk digital, dan eksperimen di web.',
   image: {
-    src: '/avatar.svg',
-    alt: 'Foto profil VinnDeev',
+    src: '/avatar.png',
+    alt: 'Logo VinnDeev',
   },
   contactEmail: 'vinndeev@gmail.com',
   whatsappNumber: '0895351125725',
