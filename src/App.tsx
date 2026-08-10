@@ -24,7 +24,7 @@ function App() {
   return (
     <MainLayout>
       {ready ? (
-        <div className="vd-fade-in">
+        <div className="animate-vd-fade">
           <ProfileHeader />
           <SocialLinks />
           <FeaturedLinks />

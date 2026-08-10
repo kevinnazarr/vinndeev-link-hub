@@ -25,9 +25,8 @@ export default function LinkCard({
       {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       title={label}
       className={cn(
-        'group flex w-full items-center gap-4 rounded-xl border border-border bg-surface px-4 py-4 sm:px-5',
-        'transition duration-200',
-        'hover:-translate-y-px hover:border-zinc-300 hover:bg-surface-hover',
+        'group flex w-full items-center gap-4 rounded-card border border-card-border bg-surface px-4 py-4 transition duration-300 sm:px-5',
+        'hover:-translate-y-px hover:border-primary/50 hover:bg-surface-hover',
         'active:translate-y-0 active:scale-[0.995]',
         'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground',
         className,
@@ -36,26 +35,27 @@ export default function LinkCard({
       <Icon
         aria-hidden="true"
         strokeWidth={1.75}
-        className="size-5 shrink-0 text-secondary transition-colors duration-200 group-hover:text-foreground"
+        className="size-5 shrink-0 text-on-surface-secondary transition-colors duration-300 group-hover:text-primary"
       />
       <span className="min-w-0 flex-1">
-        <span className="block truncate text-[15px] font-medium leading-6 text-foreground">
+        <span className="block truncate font-heading text-[15px] font-extrabold leading-6 text-on-surface">
           {label}
         </span>
         {description ? (
           <span
             title={description}
-            className="mt-0.5 block truncate text-[13px] leading-5 text-muted"
+            className="mt-0.5 block truncate font-sans text-[13px] leading-5 text-on-surface-secondary"
           >
             {description}
           </span>
         ) : null}
       </span>
-      <ArrowUpRight
+      <span
         aria-hidden="true"
-        strokeWidth={1.75}
-        className="size-4 shrink-0 text-muted transition-[transform,color] duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-secondary"
-      />
+        className="flex size-7 shrink-0 items-center justify-center rounded-full bg-primary text-white transition-transform duration-300 group-hover:rotate-45 dark:bg-accent dark:text-on-surface"
+      >
+        <ArrowUpRight aria-hidden="true" strokeWidth={2} className="size-4" />
+      </span>
     </a>
   )
 }

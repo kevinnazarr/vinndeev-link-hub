@@ -10,7 +10,7 @@ export default function ProfileHeader() {
         height={96}
         className="size-24 rounded-full border border-border object-cover"
       />
-      <h1 className="mt-5 text-[32px] font-bold leading-9 tracking-tight text-foreground">
+      <h1 className="mt-5 font-heading text-[32px] font-extrabold leading-9 tracking-tight text-foreground">
         {profile.name}
       </h1>
       <p className="mt-2 text-[15px] font-medium leading-6 text-secondary">

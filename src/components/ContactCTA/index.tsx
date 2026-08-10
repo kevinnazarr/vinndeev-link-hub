@@ -10,7 +10,7 @@ export default function ContactCTA() {
     <section aria-labelledby="contact-heading" className="mt-10 text-center">
       <h2
         id="contact-heading"
-        className="text-lg font-semibold tracking-tight text-foreground"
+        className="font-heading text-lg font-extrabold tracking-tight text-foreground"
       >
         Punya proyek atau ide?
       </h2>

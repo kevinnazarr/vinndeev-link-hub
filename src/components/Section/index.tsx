@@ -20,7 +20,7 @@ export default function Section({ id, title, children, className }: SectionProps
       {title ? (
         <h2
           id={headingId}
-          className="text-xs font-semibold uppercase tracking-[0.18em] text-muted"
+          className="font-heading text-xs font-extrabold uppercase tracking-[0.18em] text-muted"
         >
           {title}
         </h2>

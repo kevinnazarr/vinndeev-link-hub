@@ -13,12 +13,12 @@ export default function SocialLinks() {
               rel="noopener noreferrer"
               aria-label={link.name}
               title={link.name}
-              className="flex size-14 items-center justify-center rounded-full border border-border bg-surface text-secondary transition duration-200 hover:-translate-y-px hover:border-zinc-300 hover:bg-surface-hover hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground active:translate-y-0 active:scale-[0.995]"
+              className="group flex size-14 items-center justify-center rounded-full border border-card-border bg-surface text-on-surface-secondary transition duration-200 hover:-translate-y-px hover:border-primary/40 hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground active:translate-y-0 active:scale-[0.995]"
             >
               <link.icon
                 aria-hidden="true"
                 strokeWidth={1.75}
-                className="size-6 shrink-0"
+                className="size-6 shrink-0 transition-transform duration-200 group-hover:scale-110"
               />
             </a>
           </li>
