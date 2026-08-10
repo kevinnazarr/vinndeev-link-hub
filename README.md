@@ -37,6 +37,45 @@ cd vinndeev-link-hub
 npm install
 ```
 
+Setelah itu, buat file `.env` — lihat bagian **Konfigurasi Data** di bawah.
+
+---
+
+## ⚙️ Konfigurasi Data (.env)
+
+Seluruh data website (meta SEO, profil, kontak, tautan sosial, dan tautan unggulan) dikelola melalui file `.env` di root project. File ini **tidak ikut ter-commit** ke git, jadi setelah clone kamu perlu membuatnya sendiri.
+
+Buat file `.env` lalu isi dengan data kamu (sesuaikan semua nilai):
+
+```env
+# Meta situs
+VITE_SITE_TITLE=Nama Kamu — Web Developer
+VITE_SITE_DESCRIPTION=Deskripsi singkat situsmu.
+VITE_SITE_URL=https://domainmu.com
+VITE_OG_IMAGE=https://domainmu.com/og-image.png
+
+# Profil
+VITE_PROFILE_NAME=Nama Kamu
+VITE_PROFILE_DESCRIPTOR=Fullstack Web Developer
+VITE_PROFILE_BIO=Bio singkat tentang kamu.
+VITE_PROFILE_IMAGE=/avatar.png
+VITE_PROFILE_IMAGE_ALT=Logo Nama Kamu
+
+# Kontak
+VITE_CONTACT_EMAIL=emailkamu@gmail.com
+VITE_WHATSAPP_NUMBER=08xxxxxxxxxx
+
+# Tautan sosial (JSON array; name harus cocok dengan ikon yang tersedia: GitHub, LinkedIn, Instagram, TikTok)
+VITE_SOCIAL_LINKS=[{"name":"GitHub","url":"https://github.com/username","description":"Kode, project & open source"},{"name":"Instagram","url":"https://www.instagram.com/username","description":"Foto & konten"}]
+
+# Tautan unggulan (JSON array; icon: folder | globe)
+VITE_FEATURED_LINKS=[{"title":"Portfolio","description":"Proyek pilihan & studi kasus","url":"https://domainmu.com","icon":"folder"}]
+```
+
+> 💡 **Tanpa file `.env`**, website tetap berjalan menggunakan data bawaan (default) yang ada di dalam kode — tinggal jalankan `npm run dev`.
+>
+> 💡 Ikon sosial yang tersedia: `GitHub`, `LinkedIn`, `Instagram`, `TikTok`. Platform lain tetap bisa ditambahkan — otomatis memakai ikon link default.
+
 ---
 
 ## 🚀 Menjalankan Project
@@ -72,6 +111,7 @@ vinndeev-link-hub/
 │   ├── main.tsx
 │   └── index.css
 ├── index.html
+├── .env                 ← konfigurasi data (buat sendiri, lihat Konfigurasi Data)
 ├── package.json
 ├── tsconfig.json
 ├── vite.config.ts

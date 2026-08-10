@@ -12,14 +12,16 @@ export interface Profile {
   whatsappNumber: string
 }
 
+const env = import.meta.env
+
 export const profile: Profile = {
-  name: 'VinnDeev',
-  descriptor: 'Fullstack Web Developer',
-  bio: 'Membangun website modern, produk digital, dan eksperimen web.',
+  name: env.VITE_PROFILE_NAME ?? 'VinnDeev',
+  descriptor: env.VITE_PROFILE_DESCRIPTOR ?? 'Fullstack Web Developer',
+  bio: env.VITE_PROFILE_BIO ?? 'Membangun website modern, produk digital, dan eksperimen web.',
   image: {
-    src: '/avatar.png',
-    alt: 'Logo VinnDeev',
+    src: env.VITE_PROFILE_IMAGE ?? '/avatar.png',
+    alt: env.VITE_PROFILE_IMAGE_ALT ?? 'Logo VinnDeev',
   },
-  contactEmail: 'vinndeev@gmail.com',
-  whatsappNumber: '0895351125725',
+  contactEmail: env.VITE_CONTACT_EMAIL ?? 'vinndeev@gmail.com',
+  whatsappNumber: env.VITE_WHATSAPP_NUMBER ?? '0895351125725',
 }
