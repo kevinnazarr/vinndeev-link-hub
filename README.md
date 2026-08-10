@@ -124,6 +124,7 @@ vinndeev-link-hub/
 ├── docs/
 ├── public/
 │   ├── avatar.png              ← foto profil + favicon
+│   ├── fonts/                  ← woff2 self-hosted (Bricolage, Hanken)
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── src/

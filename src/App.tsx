@@ -1,38 +1,35 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import ContactCTA from './components/ContactCTA'
 import FeaturedLinks from './components/FeaturedLinks'
-import PageSkeleton from './components/PageSkeleton'
 import ProfileHeader from './components/ProfileHeader'
 import SocialLinks from './components/SocialLinks'
 import MainLayout from './layouts/MainLayout'
 
-/** Minimal skeleton display time so the loading state stays perceptible. */
-const SKELETON_MS = 400
+/** How long the static skeleton overlay stays visible after mount. */
+const SKELETON_MS = 200
 
-function useMinDisplay(ms: number): boolean {
-  const [ready, setReady] = useState(false)
+/**
+ * The skeleton is static HTML in index.html (outside #root) so it paints at
+ * first contentful paint. Once React has mounted, remove it to reveal the app.
+ */
+function useRemoveSkeleton(ms: number): void {
   useEffect(() => {
-    const timer = setTimeout(() => setReady(true), ms)
+    const timer = setTimeout(() => {
+      document.getElementById('vd-skeleton')?.remove()
+    }, ms)
     return () => clearTimeout(timer)
   }, [ms])
-  return ready
 }
 
 function App() {
-  const ready = useMinDisplay(SKELETON_MS)
+  useRemoveSkeleton(SKELETON_MS)
 
   return (
     <MainLayout>
-      {ready ? (
-        <div className="animate-vd-fade">
-          <ProfileHeader />
-          <SocialLinks />
-          <FeaturedLinks />
-          <ContactCTA />
-        </div>
-      ) : (
-        <PageSkeleton />
-      )}
+      <ProfileHeader />
+      <SocialLinks />
+      <FeaturedLinks />
+      <ContactCTA />
     </MainLayout>
   )
 }
