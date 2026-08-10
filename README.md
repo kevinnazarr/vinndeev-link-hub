@@ -1,76 +1,94 @@
-# React + TypeScript + Vite
+# 🔗 VinnDeev Link Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VinnDeev Link Hub adalah website personal yang digunakan sebagai pusat berbagai link sosial media, project, portfolio, dan kontak VinnDeev.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Tentang Project
 
-## React Compiler
+VinnDeev Link Hub merupakan website satu halaman yang menjadi satu tempat untuk mengakses berbagai sosial media, project, portfolio, dan kontak VinnDeev.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Didesain mobile-first dengan fokus pada kecepatan, kesederhanaan, dan personal branding.
 
-## Expanding the ESLint configuration
+🌐 **Domain:** https://vinndeev.com
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Teknologi | Kegunaan |
+| --------- | -------- |
+| [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev) | UI framework. |
+| [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org) | Type-safe JavaScript untuk kode yang lebih aman. |
+| [![Vite](https://img.shields.io/badge/Vite-9135FF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev) | Build tool & development server. |
+| [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com) | Utility-first CSS framework. |
+| [![Lucide](https://img.shields.io/badge/Lucide_React-F56565?style=for-the-badge&logo=lucide&logoColor=white)](https://lucide.dev) | Icon library. |
+| [![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)](https://eslint.org) | Code linting untuk menjaga kualitas kode. |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
+## 📦 Instalasi
+
+Clone repository lalu install dependency:
+
+```bash
+git clone https://github.com/kevinnazarr/vinndeev-link-hub.git
+cd vinndeev-link-hub
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Menjalankan Project
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Jalankan development server:
 
+```bash
+npm run dev
 ```
-# vinndeev-link-hub
+
+Project dapat dibuka melalui URL localhost yang ditampilkan oleh Vite.
+
+Script lain yang tersedia:
+
+```bash
+npm run build    # Build produksi
+npm run lint     # Menjalankan ESLint
+npm run preview  # Preview hasil build
+```
+
+---
+
+## 📁 Struktur Project
+
+```text
+vinndeev-link-hub/
+├── docs/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── App.tsx
+│   ├── App.css
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+```
+
+Penjelasan folder penting:
+
+```text
+📁 src    → Source code aplikasi
+📁 src/assets → Aset statis (gambar, logo)
+📁 public → File statis publik
+📁 docs   → Dokumentasi project
+```
+
+---
+
+## 📄 License
+
+License belum ditentukan.
