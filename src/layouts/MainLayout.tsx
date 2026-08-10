@@ -22,7 +22,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
 
       <main
         id="main"
-        className="vd-fade-in mx-auto w-full max-w-160 flex-1 px-5 pb-16 pt-16 sm:pt-24"
+        className="mx-auto w-full max-w-160 flex-1 px-5 pb-16 pt-16 sm:pt-24"
       >
         {children}
       </main>
